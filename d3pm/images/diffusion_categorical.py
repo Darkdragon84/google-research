@@ -15,12 +15,13 @@
 
 """Diffusion for discrete state spaces."""
 
-from . import utils
 import jax
-from jax import lax
 import jax.numpy as jnp
 import numpy as onp
 import scipy.special
+from jax import lax
+
+from . import utils
 
 
 def make_diffusion(hps, num_bits):
